@@ -11,7 +11,7 @@ def index():
 @app.route('/delivery-fee', methods=['POST'])
 def delivery_fee():
     data = request.get_json()
-
+    
     check_data(data)
 
     delivery_fee = calculate_delivery_fee(
