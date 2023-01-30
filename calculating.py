@@ -17,10 +17,7 @@ def calculate_delivery_fee(cart_value, delivery_distance, number_of_items, deliv
     delivery_fee = base_fee + small_cart_value_surcharge + \
         add_distance_surcharge + add_items_surcharge + extra_surcharge
 
-    print(small_cart_value_surcharge, add_distance_surcharge,add_items_surcharge,extra_surcharge)
-
     delivery_data = datetime.strptime(delivery_data, "%Y-%m-%dT%H:%M:%SZ")
-    print(delivery_data.strftime("%A"))
 
     if delivery_data.strftime("%A") == "Friday" and int(delivery_data.strftime("%H")) >= 15 and int(delivery_data.strftime("%H")) < 19:
         delivery_fee *= 1.2
