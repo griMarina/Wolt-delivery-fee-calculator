@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Delivery Fee Calculator'
+    return 'Delivery fee calculator'
 
 @app.route('/delivery-fee', methods=['POST'])
 def delivery_fee():

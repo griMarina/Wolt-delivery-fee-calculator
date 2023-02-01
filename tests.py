@@ -14,7 +14,7 @@ def test_api_status_codes():
 
 
 def test_calculate_delivery_fee():
-    # Example from the description
+    # Example from the specification
     response = requests.post(url, json={'cart_value': 790, 'delivery_distance': 2235, 'number_of_items': 4, 'time': '2021-10-12T13:00:00Z'})
     result = response.json()
     assert result['delivery_fee'] == 710
