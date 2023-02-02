@@ -11,8 +11,10 @@ Run in the project directory:
 
 `.\py_create.bat`        if you use Windows 
 
-### To start server run in project directory:
+### To start server run in the project directory:
 `(wolt-env)  python3 main.py`
+
+`(wolt-env)  python main.py`.  if you use Windows 
 
 The server is running on port http://127.0.0.1:5000
 
@@ -21,19 +23,18 @@ In a new terminal activate virtual environment:
 
 `source ./wolt-env/bin/activate`
 
+`wolt-evn\scripts\activate` if you use Windows 
+
 and run tests:
 
 `(wolt-env)  pytest tests.py`
 
-### To test API requests you can use Postman.
+### Testing API requests with Postman.
 
-URI: http://127.0.0.1:5000/delivery-fee 
-
-method: POST
-
-header Content-Type: application/json
-
-body JSON:
+* URI: http://127.0.0.1:5000/delivery-fee 
+* method: POST
+* header Content-Type: application/json
+* body JSON:
 ```
 {
     "cart_value": 790,
