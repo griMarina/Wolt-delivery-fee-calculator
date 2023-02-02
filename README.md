@@ -5,29 +5,17 @@
 * Flask
 
 ### Installation
-Run in the project directory: 
+Run in the project directory: `source py_create.sh` or `.\py_create.bat` on Windows 
 
-`source py_create.sh`    
-
-`.\py_create.bat`        if you use Windows 
-
-### To start server run in the project directory:
-`(wolt-env)  python3 main.py`
-
-`(wolt-env)  python main.py`.  if you use Windows 
+### Start server 
+Run in the project directory: `python3 main.py` or `python main.py` on Windows 
 
 The server is running on port http://127.0.0.1:5000
 
-### To run tests: 
-In a new terminal activate virtual environment:
+### Testing: 
+In a new terminal activate virtual environment: `source ./wolt-env/bin/activate` or `wolt-evn\scripts\activate` on Windows 
 
-`source ./wolt-env/bin/activate`
-
-`wolt-evn\scripts\activate` if you use Windows 
-
-and run tests:
-
-`(wolt-env)  pytest tests.py`
+Run tests: `pytest tests.py`
 
 ### Testing API requests with Postman.
 
