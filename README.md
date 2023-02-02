@@ -13,7 +13,9 @@ Run in the project directory: `python3 main.py` or `python main.py` on Windows
 The server is running on port http://127.0.0.1:5000
 
 ### Testing: 
-In a new terminal activate virtual environment: `source ./wolt-env/bin/activate` or `wolt-evn\scripts\activate` on Windows 
+In a new terminal activate virtual environment: `source ./wolt-env/bin/activate` 
+
+or `wolt-evn\scripts\activate` on Windows 
 
 Run tests: `pytest tests.py`
 
